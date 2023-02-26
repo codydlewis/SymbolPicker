@@ -1,6 +1,6 @@
 # SymbolPicker
 
-![](https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square)
+![](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![](https://img.shields.io/badge/Platform-iOS_|_macOS_|_watchOS_|_tvOS-blue?style=flat-square)
 ![](https://img.shields.io/badge/Release-1.0.0-blue?style=flat-square)
 
