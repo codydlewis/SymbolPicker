@@ -13,9 +13,15 @@ public struct SymbolPicker: View {
     /// The variable used by the programmer to represent the symbol.
     @Binding var symbol: String
     /// The default symbol suggested to the user.
-    var defaultSymbol: String = ""
+    @State var defaultSymbol: String = ""
     /// The collection of symbols being shown to the user to select from.
     @State var symbolGroup: SymbolGroup = DefaultSymbols
+    
+    public init(symbol: Binding<String>, defaultSymbol: String = "", symbolGroup: SymbolGroup = DefaultSymbols) {
+        _symbol = symbol
+        _defaultSymbol = State(initialValue: defaultSymbol)
+        _symbolGroup = State(initialValue: symbolGroup)
+    }
     
     /// The size of symbol tiles.
     private var tileSize: CGFloat {
