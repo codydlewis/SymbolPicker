@@ -17,4 +17,20 @@ final class SymbolsTests: XCTestCase {
         // Ensure that the DefaultSymbols object contains 4014 symbols in the `symbols` attribute
         XCTAssertEqual(DefaultSymbols.symbols.count, 4014)
     }
+    
+    func testCustomFromList() throws {
+        // create SymbolGroup instance using `symbols` init
+        let sut = SymbolGroup("Custom1", symbols: ["trash", "folder", "tray", "clipboard", "list"])
+        // test name attribute
+        XCTAssertEqual(sut.name, "Custom1")
+        // test symbols attribute
+        XCTAssertEqual(sut.symbols.count, 5)
+    }
+    
+    func testCustomFromFile() throws {
+        // create SymbolGroup instance using 'filename' init
+        let sut = SymbolGroup(filename: "DoesNotExist")
+        // test that SUT has no symbols within that attribute
+        XCTAssertEqual(sut.symbols.count, 0)
+    }
 }
