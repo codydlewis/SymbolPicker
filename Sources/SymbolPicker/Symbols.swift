@@ -41,4 +41,4 @@ public struct SymbolGroup {
 }
 
 /// All symbols in the SF Symbols v4 catalogue.
-let DefaultSymbols = SymbolGroup(filename: "SFSymbols")
+public let DefaultSymbols = SymbolGroup(filename: "SFSymbols")
