@@ -106,3 +106,7 @@ The following is a list of things I would *like* to do at some point.
 - [ ] Filter options for showing only one type of symbol 'variant' (e.g., only 'fill' or only 'circle' variants)
 - [ ] Improve search method to allow for spaces (in place of full stops) and ignores word order
 - [ ] Support making group selections (i.e., select multiple symbols, not just one)
+
+## License
+
+This package is available under the MIT license. See the [LICENSE](LICENSE) file for more information.
