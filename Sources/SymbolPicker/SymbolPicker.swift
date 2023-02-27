@@ -88,20 +88,20 @@ public struct SymbolPicker: View {
     
     /// View and logic for symbol tiles.
     @ViewBuilder private func symbolTile(_ thisSymbol: String) -> some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: tileCornerRadius)
-                .fill(tileBackground(thisSymbol))
+        Button {
+            self.symbol = thisSymbol
+            dismiss()
+        } label: {
             Image(systemName: thisSymbol)
                 .resizable()
                 .scaledToFit()
                 .padding()
+                .frame(width: tileSize, height: tileSize)
+                .background(tileBackground(thisSymbol))
                 .foregroundColor(tileForeground(thisSymbol))
+                .cornerRadius(tileCornerRadius)
         }
-        .frame(width: tileSize, height: tileSize)
-        .onTapGesture {
-            self.symbol = thisSymbol
-            dismiss()
-        }
+        .buttonStyle(.plain)
     }
     
     /// Dynamically sized grid of symbol tiles within a scrollable container.
