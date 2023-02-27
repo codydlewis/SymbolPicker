@@ -2,9 +2,11 @@
 
 ![](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![](https://img.shields.io/badge/Platform-iOS_|_macOS_|_watchOS_|_tvOS-blue?style=flat-square)
-![](https://img.shields.io/badge/Release-1.0.0-blue?style=flat-square)
+![](https://img.shields.io/badge/Release-1.0.2-blue?style=flat-square)
 
-A simple to use and customisable SF Symbol picker for SwiftUI.
+A simple interface for picking SF Symbols in SwiftUI.
+
+![banner](img/banner.png)
 
 ## Features
 
@@ -44,7 +46,7 @@ import SymbolPicker
 struct ContentView: View {
     @State private var symbol = "folder"
     @State private var showSymbolPicker = false
-    
+
     var body: some View {
         Button {
             showSymbolPicker.toggle()
@@ -65,23 +67,23 @@ import SwiftUI
 import SymbolPicker
 
 let DocsGroup = SymbolGroup("Documents", symbols: [
-    "doc", "doc.fill", "doc.circle", "doc.circle.fill", "doc.badge.plus", "doc.fill.badge.plus", 
-    "doc.badge.arrow.up", "doc.badge.arrow.up.fill", "doc.badge.ellipsis", "doc.fill.badge.ellipsis", 
-    "doc.badge.gearshape", "doc.badge.gearshape.fill", "lock.doc", "lock.doc.fill", "arrow.up.doc", 
-    "arrow.up.doc.fill", "arrow.down.doc", "arrow.down.doc.fill", "doc.text", "doc.text.fill", 
-    "doc.zipper", "doc.on.doc", "doc.on.doc.fill", "doc.on.clipboard", "arrow.right.doc.on.clipboard", 
-    "arrow.up.doc.on.clipboard", "arrow.triangle.2.circlepath.doc.on.clipboard", "doc.on.clipboard.fill", 
-    "clipboard", "clipboard.fill", "list.bullet.clipboard", "list.bullet.clipboard.fill", 
-    "list.clipboard", "list.clipboard.fill", "doc.richtext", "doc.richtext.fill", "doc.plaintext", 
-    "doc.plaintext.fill", "doc.append", "doc.append.fill", "doc.text.below.ecg", 
-    "doc.text.below.ecg.fill", "chart.bar.doc.horizontal", "chart.bar.doc.horizontal.fill", 
+    "doc", "doc.fill", "doc.circle", "doc.circle.fill", "doc.badge.plus", "doc.fill.badge.plus",
+    "doc.badge.arrow.up", "doc.badge.arrow.up.fill", "doc.badge.ellipsis", "doc.fill.badge.ellipsis",
+    "doc.badge.gearshape", "doc.badge.gearshape.fill", "lock.doc", "lock.doc.fill", "arrow.up.doc",
+    "arrow.up.doc.fill", "arrow.down.doc", "arrow.down.doc.fill", "doc.text", "doc.text.fill",
+    "doc.zipper", "doc.on.doc", "doc.on.doc.fill", "doc.on.clipboard", "arrow.right.doc.on.clipboard",
+    "arrow.up.doc.on.clipboard", "arrow.triangle.2.circlepath.doc.on.clipboard", "doc.on.clipboard.fill",
+    "clipboard", "clipboard.fill", "list.bullet.clipboard", "list.bullet.clipboard.fill",
+    "list.clipboard", "list.clipboard.fill", "doc.richtext", "doc.richtext.fill", "doc.plaintext",
+    "doc.plaintext.fill", "doc.append", "doc.append.fill", "doc.text.below.ecg",
+    "doc.text.below.ecg.fill", "chart.bar.doc.horizontal", "chart.bar.doc.horizontal.fill",
     "list.bullet.rectangle.portrait", "list.bullet.rectangle.portrait.fill", "doc.text.magnifyingglass",
 ])
 
 struct ContentView: View {
     @State private var symbol = "doc"
     @State private var showSymbolPicker = false
-    
+
     var body: some View {
         Button {
             showSymbolPicker.toggle()
